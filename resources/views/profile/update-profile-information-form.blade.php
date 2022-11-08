@@ -58,7 +58,11 @@
             <x-jet-input id="name" type="text" class="mt-1 block w-full" wire:model.defer="state.name" autocomplete="name" />
             <x-jet-input-error for="name" class="mt-2" />
         </div>
-
+        <div class="col-span-6 sm:col-span-4">
+            <x-jet-label for="phnum" value="{{ __('Phone number') }}" />
+            <x-jet-input id="phnum" type="text" class="mt-1 block w-full" wire:model.defer="state.phnum" autocomplete="phnum" />
+            <x-jet-input-error for="phnum" class="mt-2" />
+        </div>
         <!-- Email -->
         <div class="col-span-6 sm:col-span-4">
             <x-jet-label for="email" value="{{ __('Email') }}" />

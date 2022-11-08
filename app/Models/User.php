@@ -27,6 +27,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'phnum',
     ];
 
     /**
@@ -41,11 +42,7 @@ class User extends Authenticatable
         'two_factor_secret',
     ];
 
-    /**
-     * The attributes that should be cast.
-     *
-     * @var array
-     */
+  
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
